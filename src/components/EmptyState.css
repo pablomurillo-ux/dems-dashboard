@@ -1,0 +1,101 @@
+/* ============================================================
+   EmptyState Component
+   ============================================================ */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-24);
+  width: 352px;
+}
+
+/* ── Illustration wrapper (centers scaled illustration) ── */
+.empty-state-illus-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* ── Text content ── */
+.empty-state-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-8);
+  width: 100%;
+}
+
+.empty-state-title {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-body-semibold);
+  line-height: var(--font-lineheight-display);
+  text-align: center;
+  color: var(--color-fg-base-title);
+  width: 100%;
+  margin: 0;
+}
+
+.empty-state-lg .empty-state-title {
+  font-size: var(--font-size-display-md);
+  letter-spacing: var(--font-letterspacing-display-md);
+}
+
+.empty-state-md .empty-state-title {
+  font-size: var(--font-size-display-sm);
+  letter-spacing: var(--font-letterspacing-display-sm);
+}
+
+.empty-state-sm .empty-state-title {
+  font-size: var(--font-size-display-xs);
+  letter-spacing: var(--font-letterspacing-display-xs);
+}
+
+.empty-state-description {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body-regular);
+  line-height: var(--font-lineheight-body);
+  text-align: center;
+  color: var(--color-fg-base-secondary);
+  width: 100%;
+  margin: 0;
+}
+
+.empty-state-lg .empty-state-description {
+  font-size: var(--font-size-body-lg);
+  letter-spacing: var(--font-letterspacing-body-lg);
+}
+
+.empty-state-md .empty-state-description,
+.empty-state-sm .empty-state-description {
+  font-size: var(--font-size-body-md);
+  letter-spacing: var(--font-letterspacing-body-md);
+}
+
+/* ── Button ── */
+.empty-state-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-8);
+  height: 48px;
+  width: 100%;
+  padding: 0 var(--size-16);
+  background-color: var(--color-bg-brand-primary);
+  border: none;
+  border-radius: var(--radius-8);
+  cursor: pointer;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-body-medium);
+  letter-spacing: var(--font-letterspacing-body-md);
+  color: white;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.empty-state-button:hover {
+  background-color: var(--color-bg-brand-primary-hover);
+}

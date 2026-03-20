@@ -1,0 +1,96 @@
+/* ============================================================
+   Pagination Component
+   ============================================================ */
+
+.pg-root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-4);
+}
+
+/* ── Item base ── */
+
+.pg-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: var(--radius-8);
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  transition: background-color 0.1s, opacity 0.1s;
+}
+
+/* ── Number items ── */
+
+.pg-item-number {
+  background-color: transparent;
+  color: var(--color-fg-base-secondary);
+}
+
+.pg-item-number:hover:not(:disabled) {
+  background-color: var(--color-bg-brand-primary-hover);
+  color: var(--color-fg-brand-onhigh);
+}
+
+.pg-item-number:active:not(:disabled) {
+  background-color: var(--color-bg-brand-primary-hover);
+  color: var(--color-fg-brand-onhigh);
+  opacity: var(--opacity-quarter-visible);
+}
+
+.pg-item-number.pg-item-active {
+  background-color: var(--color-bg-brand-primary);
+  color: var(--color-fg-info-onhigh);
+  cursor: default;
+}
+
+/* ── Icon items (prev / next) ── */
+
+.pg-item-icon {
+  background-color: transparent;
+  color: var(--color-fg-base-secondary);
+}
+
+.pg-item-icon:hover:not(:disabled) {
+  background-color: var(--color-bg-brand-primary-hover);
+  color: var(--color-fg-brand-onhigh);
+}
+
+.pg-item-icon:active:not(:disabled) {
+  background-color: var(--color-bg-brand-primary-hover);
+  color: var(--color-fg-brand-onhigh);
+  opacity: var(--opacity-quarter-visible);
+}
+
+/* ── Disabled ── */
+
+.pg-item-disabled {
+  opacity: var(--opacity-half);
+  cursor: not-allowed;
+}
+
+/* Ellipsis (dots) — disabled but fully visible */
+.pg-item-icon.pg-item-disabled {
+  opacity: 1;
+  cursor: default;
+  background-color: transparent;
+  color: var(--color-fg-base-quarternary);
+}
+
+/* ── Focus ── */
+
+.pg-item:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 0;
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+  background-color: var(--color-bg-base-onprimaryhigh);
+}
+

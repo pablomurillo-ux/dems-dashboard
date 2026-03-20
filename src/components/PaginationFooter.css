@@ -1,0 +1,45 @@
+/* ============================================================
+   PaginationFooter Component
+   ============================================================ */
+
+.pagination-footer {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 720px;
+}
+
+/* ── Total items label ── */
+.pagination-footer-total {
+  flex-shrink: 0;
+  width: 92px;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  line-height: var(--font-lineheight-body);
+  color: var(--color-fg-base-tertiary);
+  text-align: center;
+}
+
+/* ── Pagination (centered) ── */
+.pagination-footer-pages {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── InputField override: fixed width, no label ── */
+.pagination-footer .input-field {
+  flex-shrink: 0;
+  width: 304px;
+}
+
+.pagination-footer .input-field .input-box {
+  width: 304px;
+}
+
+.pagination-footer .input-label {
+  display: none;
+}

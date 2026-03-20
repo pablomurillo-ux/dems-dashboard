@@ -1,0 +1,64 @@
+/* ============================================================
+   Tooltip Component
+   ============================================================ */
+
+.tooltip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
+}
+
+/* ── Directions ── */
+.tooltip-top    { flex-direction: column; }
+.tooltip-bottom { flex-direction: column-reverse; }
+.tooltip-left   { flex-direction: row; }
+.tooltip-right  { flex-direction: row-reverse; }
+
+/* ── Content bubble ── */
+.tooltip-content {
+  background-color: var(--color-bg-base-inverse);
+  color: var(--color-fg-base-inverse);
+  padding: var(--size-8) var(--size-12);
+  border-radius: var(--radius-4);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  line-height: var(--font-lineheight-body);
+  max-width: 256px;
+  white-space: normal;
+}
+
+/* ── Arrow ── */
+.tooltip-arrow {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-bg-base-inverse);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+/* Arrow for top: tip points up, overlaps top edge of bubble */
+.tooltip-top .tooltip-arrow {
+  border-radius: 0 2px 0 0; /* top-right rounded → top-pointing tip */
+  margin-bottom: -6px;
+}
+
+/* Arrow for bottom: tip points down, overlaps bottom edge of bubble */
+.tooltip-bottom .tooltip-arrow {
+  border-radius: 0 0 0 2px; /* bottom-left rounded → bottom-pointing tip */
+  margin-top: -6px;
+}
+
+/* Arrow for left: tip points left, overlaps left edge of bubble */
+.tooltip-left .tooltip-arrow {
+  border-radius: 2px 0 0 0; /* top-left rounded → left-pointing tip */
+  margin-right: -6px;
+}
+
+/* Arrow for right: tip points right, overlaps right edge of bubble */
+.tooltip-right .tooltip-arrow {
+  border-radius: 0 0 2px 0; /* bottom-right rounded → right-pointing tip */
+  margin-left: -6px;
+}

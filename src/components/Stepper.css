@@ -1,0 +1,155 @@
+/* ============================================================
+   Stepper Component
+   ============================================================ */
+
+/* ── Stepper group ── */
+.stepper-horizontal {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.stepper-vertical {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ── Step item ── */
+
+/* Horizontal step: fixed width, column layout */
+.step-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 130px;
+}
+
+/* Vertical step: row layout */
+.step-vertical {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--size-8);
+}
+
+/* ── Track (circle + connector) ── */
+
+.step-track-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 0;
+}
+
+.step-track-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ── Circle ── */
+
+.step-circle {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-circle-current {
+  border: 2px solid var(--color-border-brand);
+  background: transparent;
+}
+
+.step-circle-next {
+  border: 2px solid var(--color-border-base);
+  background: transparent;
+}
+
+.step-circle-error {
+  background-color: var(--color-bg-error-primary);
+}
+
+.step-circle-current-error {
+  border: 2px solid var(--color-border-error);
+  background: transparent;
+}
+
+.step-circle-completed {
+  background-color: var(--color-bg-brand-primary);
+}
+
+/* ── Inner dot ── */
+
+.step-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.step-dot-brand { background-color: var(--color-bg-brand-primary); }
+.step-dot-error { background-color: var(--color-bg-error-primary); }
+
+/* ── Connector line ── */
+
+.step-connector-horizontal {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border-base);
+}
+
+.step-connector-vertical {
+  width: 1px;
+  height: 128px;
+  background-color: var(--color-border-base);
+}
+
+/* ── Text content ── */
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+}
+
+.step-content-horizontal {
+  width: 100%;
+  padding-right: var(--size-8);
+  padding-top: var(--size-4);
+}
+
+.step-content-vertical {
+  flex: 1;
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.step-title {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-medium);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  line-height: var(--font-lineheight-body);
+  color: var(--color-fg-base-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.step-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  line-height: var(--font-lineheight-body);
+  color: var(--color-fg-base-tertiary);
+}

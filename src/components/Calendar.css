@@ -1,0 +1,280 @@
+/* ============================================================
+   Calendar Component
+   ============================================================ */
+
+.cal-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--size-12);
+  padding: var(--size-12);
+  background-color: var(--color-bg-base-primary);
+  border: 1px solid var(--color-border-base);
+  border-radius: var(--radius-8);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 256px;
+  box-sizing: border-box;
+}
+
+.cal-container.cal-horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0;
+  width: 520px;
+}
+
+.cal-container.cal-vertical {
+  flex-direction: column;
+  gap: 0;
+  width: 256px;
+}
+
+/* Month panel */
+.cal-month-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-16);
+  flex: 1;
+  min-width: 0;
+}
+
+/* Dividers between month panels */
+.cal-divider {
+  width: 1px;
+  align-self: stretch;
+  background-color: var(--color-border-base);
+  margin: 0 var(--size-12);
+  flex-shrink: 0;
+}
+
+.cal-divider-h {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-border-base);
+  margin: var(--size-12) 0;
+  flex-shrink: 0;
+}
+
+/* ── Header ── */
+
+.cal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-4);
+  width: 100%;
+}
+
+.cal-header-title {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-semibold);
+  color: var(--color-fg-base-secondary);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  text-align: center;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.cal-header-dropdowns {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+  justify-content: center;
+}
+
+/* Matches InputField select variant */
+.cal-select-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-8);
+  height: 32px;
+  padding: 0 var(--size-8) 0 var(--size-12);
+  background-color: var(--color-bg-base-onprimarylow);
+  border: 1px solid var(--color-border-base);
+  border-radius: var(--radius-8);
+  color: var(--color-fg-base-secondary);
+  transition: border-color 0.1s, box-shadow 0.1s;
+  cursor: pointer;
+}
+
+.cal-select-wrap:hover {
+  border-color: var(--color-border-secondary);
+}
+
+.cal-select-wrap:focus-within {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 2px rgba(33, 60, 136, 0.15);
+  outline: none;
+}
+
+.cal-select-wrap svg {
+  flex-shrink: 0;
+  color: var(--color-fg-base-quarternary);
+  pointer-events: none;
+}
+
+.cal-select {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-base-primary);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  /* Size to content — no stretching */
+  width: auto;
+  max-width: 100%;
+}
+
+.cal-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-radius: var(--radius-8);
+  cursor: pointer;
+  color: var(--color-fg-base-secondary);
+  padding: 0;
+  transition: background-color 0.1s;
+}
+
+.cal-nav-btn:hover {
+  background-color: var(--color-bg-base-onprimaryhigh);
+}
+
+.cal-nav-btn:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 0;
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+}
+
+.cal-nav-spacer {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+/* ── Grid ── */
+
+.cal-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.cal-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/* Day-of-week labels */
+.cal-weekday {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-base-quarternary);
+  letter-spacing: var(--font-letterspacing-body-xs);
+}
+
+/* ── Day cell base ── */
+
+.cal-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.08s;
+  /* default: unselected */
+  background-color: transparent;
+  color: var(--color-fg-base-secondary);
+  border-radius: var(--radius-4);
+}
+
+.cal-day:disabled {
+  cursor: default;
+}
+
+/* ── States (match Figma atom exactly) ── */
+
+/* unselected — already the base above */
+
+/* grey — out-of-month */
+.cal-day--grey {
+  opacity: var(--opacity-half);
+  pointer-events: none;
+}
+
+/* hover */
+.cal-day--hover {
+  background-color: var(--color-bg-base-tertiary);
+  border-radius: var(--radius-8);
+}
+
+/* selected (basic / same-day range) */
+.cal-day--selected {
+  background-color: var(--color-bg-brand-primary);
+  color: var(--color-fg-brand-onhigh);
+  border-radius: var(--radius-8);
+}
+
+/* range — flat grey bar, no radius */
+.cal-day--range {
+  background-color: var(--color-bg-base-onsecondaryhigh);
+  border-radius: 0;
+}
+
+/* range-left — grey bar, rounded on left only (row start) */
+.cal-day--range-left {
+  background-color: var(--color-bg-base-onsecondaryhigh);
+  border-radius: var(--radius-8) 0 0 var(--radius-8);
+}
+
+/* range-right — grey bar, rounded on right only (row end) */
+.cal-day--range-right {
+  background-color: var(--color-bg-base-onsecondaryhigh);
+  border-radius: 0 var(--radius-8) var(--radius-8) 0;
+}
+
+/* range-selected-start — blue, rounded on left only */
+.cal-day--range-selected-start {
+  background-color: var(--color-bg-brand-primary);
+  color: var(--color-fg-brand-onhigh);
+  border-radius: var(--radius-8) 0 0 var(--radius-8);
+}
+
+/* range-selected-end — blue, rounded on right only */
+.cal-day--range-selected-end {
+  background-color: var(--color-bg-brand-primary);
+  color: var(--color-fg-brand-onhigh);
+  border-radius: 0 var(--radius-8) var(--radius-8) 0;
+}
+
+/* Focus ring — always on top */
+.cal-day:focus-visible {
+  outline: 2px solid white;
+  outline-offset: -2px;
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+  position: relative;
+  z-index: 1;
+}

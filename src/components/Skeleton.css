@@ -1,0 +1,46 @@
+/* ============================================================
+   Skeleton Component
+   ============================================================ */
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.skeleton {
+  display: block;
+  background-color: var(--color-bg-base-onprimaryhigh);
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+/* ── Variants ── */
+
+.skeleton-text {
+  width: 180px;
+  height: 12px;
+  border-radius: var(--radius-full);
+}
+
+.skeleton-button {
+  width: 158px;
+  height: 40px;
+  border-radius: var(--radius-4);
+}
+
+.skeleton-input {
+  width: 180px;
+  height: 40px;
+  border-radius: var(--radius-4);
+}
+
+.skeleton-container {
+  width: 180px;
+  height: 90px;
+  border-radius: var(--radius-4);
+}
+
+.skeleton-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+}

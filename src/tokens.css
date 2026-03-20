@@ -1,0 +1,582 @@
+/* ============================================================
+   VRS Design System — Foundations
+   Generated from Figma primitive color tokens
+   ============================================================ */
+
+:root {
+
+  /* ----------------------------------------------------------
+     Neutral — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-neutral-0:    #ffffff;
+  --primitive-color-neutral-50:   #f4f4f6;
+  --primitive-color-neutral-100:  #ebecef;
+  --primitive-color-neutral-200:  #dbdce1;
+  --primitive-color-neutral-300:  #b1b5be;
+  --primitive-color-neutral-400:  #8d92a0;
+  --primitive-color-neutral-500:  #676d7e;
+  --primitive-color-neutral-600:  #4e535f;
+  --primitive-color-neutral-700:  #3c3f49;
+  --primitive-color-neutral-800:  #24252d;
+  --primitive-color-neutral-900:  #17181c;
+  --primitive-color-neutral-950:  #09090c;
+
+
+  /* ----------------------------------------------------------
+     Brand — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-brand-50:   #f0f6ff;
+  --primitive-color-brand-100:  #e1edff;
+  --primitive-color-brand-200:  #b2cefe;
+  --primitive-color-brand-300:  #85acfa;
+  --primitive-color-brand-400:  #5a87f6;
+  --primitive-color-brand-500:  #3061ef;
+  --primitive-color-brand-600:  #1e49c6;
+  --primitive-color-brand-700:  #213c88;
+  --primitive-color-brand-800:  #1c2a52;
+  --primitive-color-brand-900:  #101523;
+
+
+  /* ----------------------------------------------------------
+     Blue — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-blue-50:   #f0f6ff;
+  --primitive-color-blue-100:  #e1edff;
+  --primitive-color-blue-200:  #b2cefe;
+  --primitive-color-blue-300:  #85acfa;
+  --primitive-color-blue-400:  #5a87f6;
+  --primitive-color-blue-500:  #3061ef;
+  --primitive-color-blue-600:  #1e49c6;
+  --primitive-color-blue-700:  #213c88;
+  --primitive-color-blue-800:  #1c2a52;
+  --primitive-color-blue-900:  #101523;
+
+
+  /* ----------------------------------------------------------
+     Green — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-green-50:   #f1fdf5;
+  --primitive-color-green-100:  #dcfce7;
+  --primitive-color-green-200:  #bbf7d0;
+  --primitive-color-green-300:  #86efac;
+  --primitive-color-green-400:  #4ade80;
+  --primitive-color-green-500:  #1fc15b;
+  --primitive-color-green-600:  #0b8437;
+  --primitive-color-green-700:  #0c642d;
+  --primitive-color-green-800:  #0b4622;
+  --primitive-color-green-900:  #062714;
+
+
+  /* ----------------------------------------------------------
+     Red — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-red-50:   #fff0f0;
+  --primitive-color-red-100:  #fee2e2;
+  --primitive-color-red-200:  #fecaca;
+  --primitive-color-red-300:  #fca5a5;
+  --primitive-color-red-400:  #f87171;
+  --primitive-color-red-500:  #e73636;
+  --primitive-color-red-600:  #c41717;
+  --primitive-color-red-700:  #921111;
+  --primitive-color-red-800:  #630808;
+  --primitive-color-red-900:  #330505;
+
+  /* ----------------------------------------------------------
+     Yellow — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-yellow-50:   #fefef1;
+  --primitive-color-yellow-100:  #fef9c3;
+  --primitive-color-yellow-200:  #fef08a;
+  --primitive-color-yellow-300:  #fde047;
+  --primitive-color-yellow-400:  #facc15;
+  --primitive-color-yellow-500:  #eab308;
+  --primitive-color-yellow-600:  #c88904;
+  --primitive-color-yellow-700:  #a16207;
+  --primitive-color-yellow-800:  #653806;
+  --primitive-color-yellow-900:  #2c1602;
+
+  /* ----------------------------------------------------------
+     Pink — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-pink-50:   #fef6fa;
+  --primitive-color-pink-100:  #fce7f3;
+  --primitive-color-pink-200:  #fbcfe8;
+  --primitive-color-pink-300:  #f9a8d4;
+  --primitive-color-pink-400:  #f472b6;
+  --primitive-color-pink-500:  #eb2d8b;
+  --primitive-color-pink-600:  #c01662;
+  --primitive-color-pink-700:  #990a45;
+  --primitive-color-pink-800:  #69072f;
+  --primitive-color-pink-900:  #350317;
+
+
+  /* ----------------------------------------------------------
+     Purple — Primitive Colors
+     ---------------------------------------------------------- */
+  --primitive-color-purple-50:   #f2f0ff;
+  --primitive-color-purple-100:  #ede9fe;
+  --primitive-color-purple-200:  #ddd6fe;
+  --primitive-color-purple-300:  #c4b5fd;
+  --primitive-color-purple-400:  #a284fb;
+  --primitive-color-purple-500:  #7b43f9;
+  --primitive-color-purple-600:  #6724db;
+  --primitive-color-purple-700:  #4b10a8;
+  --primitive-color-purple-800:  #310872;
+  --primitive-color-purple-900:  #1b043f;
+
+  /* ----------------------------------------------------------
+     Alpha — Primitive Colors (transparent overlays)
+     ---------------------------------------------------------- */
+  --primitive-color-alpha-0:    rgba(255, 255, 255, 0.1);
+  --primitive-color-alpha-50:   rgba(244, 244, 246, 0.1);
+  --primitive-color-alpha-100:  rgba(235, 236, 239, 0.1);
+  --primitive-color-alpha-200:  rgba(219, 220, 225, 0.1);
+  --primitive-color-alpha-300:  rgba(177, 181, 190, 0.1);
+  --primitive-color-alpha-400:  rgba(141, 146, 160, 0.1);
+  --primitive-color-alpha-500:  rgba(103, 109, 126, 0.1);
+  --primitive-color-alpha-600:  rgba(78,  83,  95,  0.1);
+  --primitive-color-alpha-700:  rgba(60,  63,  73,  0.1);
+  --primitive-color-alpha-800:  rgba(36,  37,  45,  0.1);
+  --primitive-color-alpha-900:  rgba(23,  24,  28,  0.1);
+  --primitive-color-alpha-950:  rgba(9,   9,   12,  0.1);
+
+  /* ----------------------------------------------------------
+     Shadow — Primitive Colors (black transparencies)
+     ---------------------------------------------------------- */
+  --primitive-color-shadow-0:    rgba(0, 0, 0, 0);
+  --primitive-color-shadow-50:   rgba(0, 0, 0, 0.05);
+  --primitive-color-shadow-100:  rgba(0, 0, 0, 0.10);
+  --primitive-color-shadow-150:  rgba(0, 0, 0, 0.15);
+  --primitive-color-shadow-200:  rgba(0, 0, 0, 0.20);
+
+  /* ============================================================
+     SEMANTIC TOKENS
+     Reference primitive tokens for actual usage in components
+     ============================================================ */
+
+  /* ----------------------------------------------------------
+     Semantic — Background
+     ---------------------------------------------------------- */
+  --color-bg-base-primary:          white;
+  --color-bg-base-onprimarylow:     white;
+  --color-bg-base-onprimaryhigh:    var(--primitive-color-neutral-100);  /* #ebecef */
+  --color-bg-base-secondary:        var(--primitive-color-neutral-50);   /* #f4f4f6 */
+  --color-bg-base-onsecondaryhigh:  var(--primitive-color-neutral-50);   /* #f4f4f6 */
+  --color-bg-base-tertiary:         var(--primitive-color-neutral-200);  /* #dbdce1 */
+  --color-bg-base-inverse:          var(--primitive-color-neutral-950);  /* #09090c */
+  --color-bg-base-white:            white;
+  --color-bg-base-black:            var(--primitive-color-neutral-950);  /* #09090c */
+  --color-bg-brand-primary:         var(--primitive-color-brand-500);
+  --color-bg-brand-primary-hover:   var(--primitive-color-brand-700);    /* #213c88 */    /* #3061ef */
+  --color-bg-brand-light:           var(--primitive-color-brand-50);     /* #f0f6ff */
+  --color-bg-info-primary:          var(--primitive-color-brand-500);    /* #3061ef */
+  --color-bg-info-light:            var(--primitive-color-brand-50);     /* #f0f6ff */
+  --color-bg-success-primary:       var(--primitive-color-green-600);    /* #0b8437 */
+  --color-bg-success-light:         var(--primitive-color-green-50);     /* #f1fdf5 */
+  --color-bg-error-primary:         var(--primitive-color-red-600);      /* #c41717 */
+  --color-bg-error-light:           var(--primitive-color-red-50);       /* #fff0f0 */
+  --color-bg-warning-light:         var(--primitive-color-yellow-50);    /* #fefef1 */
+
+  /* ----------------------------------------------------------
+     Semantic — Foreground
+     ---------------------------------------------------------- */
+  --color-fg-base-title:            var(--primitive-color-neutral-900);  /* #17181c */
+  --color-fg-base-primary:          var(--primitive-color-neutral-800);  /* #24252d */
+  --color-fg-base-secondary:        var(--primitive-color-neutral-700);  /* #3c3f49 */
+  --color-fg-base-tertiary:         var(--primitive-color-neutral-600);  /* #4e535f */
+  --color-fg-base-quarternary:      var(--primitive-color-neutral-500);  /* #676d7e */
+  --color-fg-base-white:            white;
+  --color-fg-base-inverse:          white;
+  --color-fg-brand-onlow:           var(--primitive-color-brand-600);    /* #1e49c6 */
+  --color-fg-info-onhigh:           #f0f6ff;                             /* light blue on info/brand bg */
+  --color-fg-brand-onhigh:          #f0f6ff;                             /* light blue on brand bg */
+  --color-fg-success-onlow:         var(--primitive-color-green-600);    /* #0b8437 */
+  --color-fg-error-onlow:           var(--primitive-color-red-600);      /* #c41717 */
+  --color-fg-error-onhigh:          #fff0f0;                             /* light red on error bg */
+  --color-fg-warning-onlow:         var(--primitive-color-yellow-700);   /* #a16207 */
+  --color-fg-info-onlow:            var(--primitive-color-brand-600);    /* #1e49c6 */
+  --color-fg-pink-onlow:            var(--primitive-color-pink-600);     /* #c01662 */
+  --color-fg-purple-onlow:          var(--primitive-color-purple-600);   /* #6724db */
+
+  --color-bg-pink-light:            var(--primitive-color-pink-50);      /* #fef6fa */
+  --color-bg-purple-light:          var(--primitive-color-purple-50);    /* #f2f0ff */
+
+  /* ----------------------------------------------------------
+     Semantic — Border
+     ---------------------------------------------------------- */
+  --color-border-base:              var(--primitive-color-neutral-200);  /* #dbdce1 */
+  --color-border-secondary:         var(--primitive-color-neutral-300);  /* #b1b5be */
+  --color-border-focus:             var(--primitive-color-brand-700);    /* #213c88 */
+  --color-border-brand:             var(--primitive-color-brand-600);    /* #1e49c6 */
+  --color-border-info:              var(--primitive-color-brand-600);    /* #1e49c6 */
+  --color-border-success:           var(--primitive-color-green-600);    /* #0b8437 */
+  --color-border-error:             var(--primitive-color-red-600);      /* #c41717 */
+  --color-border-warning:           var(--primitive-color-yellow-600);   /* #c88904 */
+  --color-border-pink:              var(--primitive-color-pink-600);     /* #c01662 */
+  --color-border-purple:            var(--primitive-color-purple-600);   /* #6724db */
+
+
+  /* ============================================================
+     TYPOGRAPHY TOKENS
+     ============================================================ */
+
+  /* ----------------------------------------------------------
+     Font Family — Primitive
+     ---------------------------------------------------------- */
+  --primitive-font-family-inter:    'Inter', sans-serif;
+
+  /* ----------------------------------------------------------
+     Font Size — Primitive
+     ---------------------------------------------------------- */
+  --primitive-font-size-12:   12px;
+  --primitive-font-size-14:   14px;
+  --primitive-font-size-16:   16px;
+  --primitive-font-size-18:   18px;
+  --primitive-font-size-20:   20px;
+  --primitive-font-size-24:   24px;
+  --primitive-font-size-28:   28px;
+  --primitive-font-size-32:   32px;
+  --primitive-font-size-40:   40px;
+  --primitive-font-size-48:   48px;
+  --primitive-font-size-56:   56px;
+  --primitive-font-size-64:   64px;
+
+  /* ----------------------------------------------------------
+     Font Weight — Primitive
+     ---------------------------------------------------------- */
+  --primitive-font-weight-regular:    400;
+  --primitive-font-weight-medium:     500;
+  --primitive-font-weight-semibold:   600;
+  --primitive-font-weight-bold:       700;
+
+  /* ----------------------------------------------------------
+     Line Height — Primitive
+     ---------------------------------------------------------- */
+  --primitive-font-lineheight-120:   1.2;
+  --primitive-font-lineheight-140:   1.4;
+  --primitive-font-lineheight-160:   1.6;
+
+  /* ----------------------------------------------------------
+     Letter Spacing — Primitive
+     ---------------------------------------------------------- */
+  --primitive-font-letterspacing-n0:    0px;
+  --primitive-font-letterspacing-n25:   -0.25px;
+  --primitive-font-letterspacing-n50:   -0.50px;
+  --primitive-font-letterspacing-n75:   -0.75px;
+  --primitive-font-letterspacing-n100:  -1px;
+  --primitive-font-letterspacing-n150:  -1.5px;
+  --primitive-font-letterspacing-n200:  -2px;
+
+  /* ----------------------------------------------------------
+     Text Decoration — Primitive
+     ---------------------------------------------------------- */
+  --primitive-font-textdecoration-none:       none;
+  --primitive-font-textdecoration-underline:  underline;
+
+
+  /* ----------------------------------------------------------
+     Font Family — Semantic
+     ---------------------------------------------------------- */
+  --font-family-display:   var(--primitive-font-family-inter);
+  --font-family-heading:   var(--primitive-font-family-inter);
+  --font-family-body:      var(--primitive-font-family-inter);
+
+  /* ----------------------------------------------------------
+     Font Weight — Semantic
+     ---------------------------------------------------------- */
+  --font-weight-heading:          var(--primitive-font-weight-semibold);
+  --font-weight-body-regular:     var(--primitive-font-weight-regular);
+  --font-weight-body-medium:      var(--primitive-font-weight-medium);
+  --font-weight-body-semibold:    var(--primitive-font-weight-semibold);
+
+  /* ----------------------------------------------------------
+     Line Height — Semantic
+     ---------------------------------------------------------- */
+  --font-lineheight-display:   var(--primitive-font-lineheight-120);  /* 120% */
+  --font-lineheight-heading:   var(--primitive-font-lineheight-140);  /* 140% */
+  --font-lineheight-body:      var(--primitive-font-lineheight-160);  /* 160% */
+
+  /* ----------------------------------------------------------
+     Font Size — Semantic
+     ---------------------------------------------------------- */
+  --font-size-display-lg:   var(--primitive-font-size-64);  /* 64px */
+  --font-size-display-md:   var(--primitive-font-size-56);  /* 56px */
+  --font-size-display-sm:   var(--primitive-font-size-48);  /* 48px */
+  --font-size-display-xs:   var(--primitive-font-size-40);  /* 40px */
+  --font-size-heading-lg:   var(--primitive-font-size-32);  /* 32px */
+  --font-size-heading-md:   var(--primitive-font-size-28);  /* 28px */
+  --font-size-heading-sm:   var(--primitive-font-size-24);  /* 24px */
+  --font-size-heading-xs:   var(--primitive-font-size-20);  /* 20px */
+  --font-size-body-lg:      var(--primitive-font-size-18);  /* 18px */
+  --font-size-body-md:      var(--primitive-font-size-16);  /* 16px */
+  --font-size-body-sm:      var(--primitive-font-size-14);  /* 14px */
+  --font-size-body-xs:      var(--primitive-font-size-12);  /* 12px */
+
+  /* ----------------------------------------------------------
+     Letter Spacing — Semantic
+     ---------------------------------------------------------- */
+  --font-letterspacing-display-lg:   var(--primitive-font-letterspacing-n200);  /* -2px    */
+  --font-letterspacing-display-md:   var(--primitive-font-letterspacing-n150);  /* -1.5px  */
+  --font-letterspacing-display-sm:   var(--primitive-font-letterspacing-n150);  /* -1.5px  */
+  --font-letterspacing-display-xs:   var(--primitive-font-letterspacing-n100);  /* -1px    */
+  --font-letterspacing-heading-lg:   var(--primitive-font-letterspacing-n75);   /* -0.75px */
+  --font-letterspacing-heading-md:   var(--primitive-font-letterspacing-n50);   /* -0.5px  */
+  --font-letterspacing-heading-sm:   var(--primitive-font-letterspacing-n50);   /* -0.5px  */
+  --font-letterspacing-heading-xs:   var(--primitive-font-letterspacing-n25);   /* -0.25px */
+  --font-letterspacing-body-lg:      var(--primitive-font-letterspacing-n25);   /* -0.25px */
+  --font-letterspacing-body-md:      var(--primitive-font-letterspacing-n25);   /* -0.25px */
+  --font-letterspacing-body-sm:      var(--primitive-font-letterspacing-n25);   /* -0.25px */
+  --font-letterspacing-body-xs:      var(--primitive-font-letterspacing-n0);    /* 0px     */
+
+
+  /* ============================================================
+     SIZE / SPACING TOKENS
+     ============================================================ */
+
+  /* ----------------------------------------------------------
+     Size — Primitive
+     ---------------------------------------------------------- */
+  --primitive-size-0:     0px;
+  --primitive-size-1:     1px;
+  --primitive-size-2:     2px;
+  --primitive-size-4:     4px;
+  --primitive-size-8:     8px;
+  --primitive-size-12:    12px;
+  --primitive-size-14:    14px;
+  --primitive-size-16:    16px;
+  --primitive-size-18:    18px;
+  --primitive-size-20:    20px;
+  --primitive-size-24:    24px;
+  --primitive-size-28:    28px;
+  --primitive-size-32:    32px;
+  --primitive-size-40:    40px;
+  --primitive-size-48:    48px;
+  --primitive-size-56:    56px;
+  --primitive-size-64:    64px;
+  --primitive-size-72:    72px;
+  --primitive-size-80:    80px;
+  --primitive-size-128:   128px;
+  --primitive-size-160:   160px;
+  --primitive-size-256:   256px;
+  --primitive-size-288:   288px;
+  --primitive-size-320:   320px;
+  --primitive-size-352:   352px;
+  --primitive-size-520:   520px;
+  --primitive-size-640:   640px;
+  --primitive-size-800:   800px;
+  --primitive-size-1080:  1080px;
+  --primitive-size-1200:  1200px;
+
+  /* ----------------------------------------------------------
+     Spacing — Semantic
+     Used as --spacing/N in Tailwind arbitrary values
+     ---------------------------------------------------------- */
+  --spacing/0:     var(--primitive-size-0);     /* 0px    */
+  --spacing/2:     var(--primitive-size-2);     /* 2px    */
+  --spacing/4:     var(--primitive-size-4);     /* 4px    */
+  --spacing/8:     var(--primitive-size-8);     /* 8px    */
+  --spacing/12:    var(--primitive-size-12);    /* 12px   */
+  --spacing/16:    var(--primitive-size-16);    /* 16px   */
+  --spacing/20:    var(--primitive-size-20);    /* 20px   */
+  --spacing/24:    var(--primitive-size-24);    /* 24px   */
+  --spacing/28:    var(--primitive-size-28);    /* 28px   */
+  --spacing/32:    var(--primitive-size-32);    /* 32px   */
+  --spacing/40:    var(--primitive-size-40);    /* 40px   */
+  --spacing/48:    var(--primitive-size-48);    /* 48px   */
+  --spacing/56:    var(--primitive-size-56);    /* 56px   */
+  --spacing/64:    var(--primitive-size-64);    /* 64px   */
+  --spacing/72:    var(--primitive-size-72);    /* 72px   */
+  --spacing/80:    var(--primitive-size-80);    /* 80px   */
+  --spacing/128:   var(--primitive-size-128);   /* 128px  */
+  --spacing/160:   var(--primitive-size-160);   /* 160px  */
+  --spacing/256:   var(--primitive-size-256);   /* 256px  */
+  --spacing/288:   var(--primitive-size-288);   /* 288px  */
+  --spacing/320:   var(--primitive-size-320);   /* 320px  */
+  --spacing/352:   var(--primitive-size-352);   /* 352px  */
+  --spacing/520:   var(--primitive-size-520);   /* 520px  */
+  --spacing/640:   var(--primitive-size-640);   /* 640px  */
+  --spacing/800:   var(--primitive-size-800);   /* 800px  */
+  --spacing/1080:  var(--primitive-size-1080);  /* 1080px */
+  --spacing/1200:  var(--primitive-size-1200);  /* 1200px */
+
+  /* Negative spacing */
+  --spacing/n1:   -1px;
+  --spacing/n4:   -4px;
+  --spacing/n8:   -8px;
+
+
+  /* ============================================================
+     BORDER RADIUS TOKENS
+     ============================================================ */
+
+  --radius/0:     var(--primitive-size-0);    /* 0px   */
+  --radius/4:     var(--primitive-size-4);    /* 4px   */
+  --radius/8:     var(--primitive-size-8);    /* 8px   */
+  --radius/12:    var(--primitive-size-12);   /* 12px  */
+  --radius/16:    var(--primitive-size-16);   /* 16px  */
+  --radius/24:    var(--primitive-size-24);   /* 24px  */
+  --radius/full:  var(--primitive-size-800);  /* 800px */
+
+
+  /* ============================================================
+     BORDER WIDTH TOKENS
+     ============================================================ */
+
+  --border/1:   var(--primitive-size-1);   /* 1px */
+  --border/2:   var(--primitive-size-2);   /* 2px */
+  --border/4:   var(--primitive-size-4);   /* 4px */
+
+
+  /* ============================================================
+     OPACITY TOKENS
+     ============================================================ */
+
+  --opacity/hidden:           0;    /* 0%   */
+  --opacity/quarter-hidden:   0.3;  /* 30%  */
+  --opacity/half:             0.5;  /* 50%  */
+  --opacity/quarter-visible:  0.7;  /* 70%  */
+  --opacity/visible:          1;    /* 100% */
+
+
+  /* ============================================================
+     COMPONENT ALIASES
+     Hyphen-based aliases for spacing/radius/border/opacity so
+     component CSS files can reference them with valid CSS identifiers.
+     (Slash characters in custom property names are non-standard and
+     not reliably resolved by all CSS engines / tooling.)
+     ============================================================ */
+
+  --size-0:    var(--primitive-size-0);    /* 0px   */
+  --size-4:    var(--primitive-size-4);    /* 4px   */
+  --size-8:    var(--primitive-size-8);    /* 8px   */
+  --size-12:   var(--primitive-size-12);   /* 12px  */
+  --size-16:   var(--primitive-size-16);   /* 16px  */
+  --size-20:   var(--primitive-size-20);   /* 20px  */
+  --size-24:   var(--primitive-size-24);   /* 24px  */
+  --size-28:   var(--primitive-size-28);   /* 28px  */
+  --size-32:   var(--primitive-size-32);   /* 32px  */
+  --size-40:   var(--primitive-size-40);   /* 40px  */
+  --size-48:   var(--primitive-size-48);   /* 48px  */
+  --size-56:   var(--primitive-size-56);   /* 56px  */
+  --size-64:   var(--primitive-size-64);   /* 64px  */
+
+  --radius-4:    var(--primitive-size-4);    /* 4px   */
+  --radius-8:    var(--primitive-size-8);    /* 8px   */
+  --radius-12:   var(--primitive-size-12);   /* 12px  */
+  --radius-full: 800px;
+
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-4: 4px;
+
+  --opacity-hidden:          0;
+  --opacity-quarter-visible: 0.7;
+  --opacity-half:            0.5;
+  --opacity-visible:         1;
+
+}
+
+
+/* ============================================================
+   DARK MODE TOKENS
+   Overrides for semantic color tokens only.
+   Primitives stay the same — only the semantic aliases change.
+   Sourced from Figma variable collection (dark mode).
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+
+    /* -- Background ------------------------------------------ */
+    --color-bg-base-primary:          var(--primitive-color-neutral-900);     /* #17181c */
+    --color-bg-base-onprimarylow:     rgba(103, 109, 126, 0.1);               /* neutral-500 @ 10% */
+    --color-bg-base-onprimaryhigh:    rgba(244, 244, 246, 0.1);               /* neutral-50  @ 10% */
+    --color-bg-base-secondary:        var(--primitive-color-neutral-950);     /* #09090c */
+    --color-bg-base-onsecondaryhigh:  var(--primitive-color-neutral-800);     /* #24252d */
+    --color-bg-base-tertiary:         var(--primitive-color-neutral-700);     /* #3c3f49 */
+    --color-bg-base-inverse:          white;
+    --color-bg-brand-light:           var(--primitive-color-brand-800);       /* #1c2a52 */
+    --color-bg-info-light:            var(--primitive-color-brand-800);       /* #1c2a52 */
+    --color-bg-error-light:           #630808;
+    --color-bg-warning-light:         #653806;
+    --color-bg-success-light:         #0b4622;
+    --color-bg-pink-light:            #69072f;
+    --color-bg-purple-light:          #310872;
+
+    /* -- Foreground ------------------------------------------ */
+    --color-fg-base-title:            var(--primitive-color-neutral-50);      /* #f4f4f6 */
+    --color-fg-base-primary:          var(--primitive-color-neutral-100);     /* #ebecef */
+    --color-fg-base-secondary:        var(--primitive-color-neutral-200);     /* #dbdce1 */
+    --color-fg-base-tertiary:         var(--primitive-color-neutral-300);     /* #b1b5be */
+    --color-fg-base-quarternary:      var(--primitive-color-neutral-400);     /* #8d92a0 */
+    --color-fg-base-inverse:          var(--primitive-color-neutral-900);     /* #17181c */
+    --color-fg-brand-onlow:           var(--primitive-color-brand-300);       /* #85acfa */
+    --color-fg-info-onlow:            var(--primitive-color-brand-300);       /* #85acfa */
+    --color-fg-error-onlow:           #fca5a5;
+    --color-fg-warning-onlow:         #fde047;
+    --color-fg-success-onlow:         #86efac;
+    --color-fg-pink-onlow:            #f9a8d4;
+    --color-fg-purple-onlow:          #c4b5fd;
+
+    /* -- Border ---------------------------------------------- */
+    --color-border-base:              var(--primitive-color-neutral-700);     /* #3c3f49 */
+    --color-border-secondary:         var(--primitive-color-neutral-600);     /* #4e535f */
+    --color-border-focus:             var(--primitive-color-brand-300);       /* #85acfa */
+    --color-border-brand:             var(--primitive-color-brand-400);       /* #5a87f6 */
+    --color-border-info:              var(--primitive-color-brand-400);       /* #5a87f6 */
+    --color-border-error:             #f87171;
+    --color-border-warning:           #facc15;
+    --color-border-success:           #4ade80;
+    --color-border-pink:              #f472b6;
+    --color-border-purple:            #a284fb;
+
+  }
+}
+
+/* Manual dark theme override (e.g. via <html data-theme="dark">) */
+[data-theme="dark"] {
+
+  /* -- Background ------------------------------------------ */
+  --color-bg-base-primary:          var(--primitive-color-neutral-900);
+  --color-bg-base-onprimarylow:     rgba(103, 109, 126, 0.1);
+  --color-bg-base-onprimaryhigh:    rgba(244, 244, 246, 0.1);
+  --color-bg-base-secondary:        var(--primitive-color-neutral-950);
+  --color-bg-base-onsecondaryhigh:  var(--primitive-color-neutral-800);
+  --color-bg-base-tertiary:         var(--primitive-color-neutral-700);
+  --color-bg-base-inverse:          white;
+  --color-bg-brand-light:           var(--primitive-color-brand-800);
+  --color-bg-info-light:            var(--primitive-color-brand-800);
+  --color-bg-error-light:           #630808;
+  --color-bg-warning-light:         #653806;
+  --color-bg-success-light:         #0b4622;
+  --color-bg-pink-light:            #69072f;
+  --color-bg-purple-light:          #310872;
+
+  /* -- Foreground ------------------------------------------ */
+  --color-fg-base-title:            var(--primitive-color-neutral-50);
+  --color-fg-base-primary:          var(--primitive-color-neutral-100);
+  --color-fg-base-secondary:        var(--primitive-color-neutral-200);
+  --color-fg-base-tertiary:         var(--primitive-color-neutral-300);
+  --color-fg-base-quarternary:      var(--primitive-color-neutral-400);
+  --color-fg-base-inverse:          var(--primitive-color-neutral-900);
+  --color-fg-brand-onlow:           var(--primitive-color-brand-300);
+  --color-fg-info-onlow:            var(--primitive-color-brand-300);
+  --color-fg-error-onlow:           #fca5a5;
+  --color-fg-warning-onlow:         #fde047;
+  --color-fg-success-onlow:         #86efac;
+  --color-fg-pink-onlow:            #f9a8d4;
+  --color-fg-purple-onlow:          #c4b5fd;
+
+  /* -- Border ---------------------------------------------- */
+  --color-border-base:              var(--primitive-color-neutral-700);
+  --color-border-secondary:         var(--primitive-color-neutral-600);
+  --color-border-focus:             var(--primitive-color-brand-300);
+  --color-border-brand:             var(--primitive-color-brand-400);
+  --color-border-info:              var(--primitive-color-brand-400);
+  --color-border-error:             #f87171;
+  --color-border-warning:           #facc15;
+  --color-border-success:           #4ade80;
+  --color-border-pink:              #f472b6;
+  --color-border-purple:            #a284fb;
+
+}

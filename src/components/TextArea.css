@@ -1,0 +1,99 @@
+/* ============================================================
+   TextArea Component
+   ============================================================ */
+
+.textarea-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 128px;
+  min-width: 256px;
+  width: 300px;
+  padding: var(--size-12);
+  gap: var(--size-8);
+  border-radius: var(--radius-8);
+  background-color: var(--color-bg-base-onprimarylow);
+  border: 1px solid var(--color-border-base);
+  transition: border-color 0.1s, box-shadow 0.1s;
+  box-sizing: border-box;
+}
+
+/* ── Error state ── */
+.textarea-wrapper-error {
+  border-color: var(--color-border-error);
+}
+
+/* ── Disabled state ── */
+.textarea-wrapper-disabled {
+  opacity: var(--opacity-half);
+  cursor: not-allowed;
+}
+
+/* ── Focus-within ── */
+.textarea-wrapper:not(.textarea-wrapper-disabled):focus-within {
+  border-color: var(--color-border-base);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+}
+
+.textarea-wrapper-error:not(.textarea-wrapper-disabled):focus-within {
+  border-color: var(--color-border-error);
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+}
+
+/* ── Leading icon ── */
+.textarea-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--color-fg-base-quarternary);
+  margin-top: 3px; /* align with first line of text */
+}
+
+.textarea-wrapper-filled .textarea-icon,
+.textarea-wrapper-error .textarea-icon {
+  color: var(--color-fg-base-secondary);
+}
+
+/* ── Native textarea ── */
+.textarea-field {
+  flex: 1 0 0;
+  min-height: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-md);
+  line-height: var(--font-lineheight-body);
+  color: var(--color-fg-base-secondary);
+  padding: 0;
+  cursor: inherit;
+}
+
+.textarea-field::placeholder {
+  color: var(--color-fg-base-quarternary);
+}
+
+.textarea-field:disabled {
+  cursor: not-allowed;
+  color: var(--color-fg-base-quarternary);
+}
+
+/* ── Resize handle ── */
+.textarea-resize {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  color: var(--color-fg-base-quarternary);
+  pointer-events: none;
+  flex-shrink: 0;
+}

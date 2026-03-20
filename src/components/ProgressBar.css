@@ -1,0 +1,19 @@
+/* ============================================================
+   ProgressBar Component
+   ============================================================ */
+
+.progress-track {
+  width: 100%;
+  height: 8px;
+  min-height: 8px;
+  background-color: var(--color-bg-base-onprimaryhigh);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--color-bg-brand-primary);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}

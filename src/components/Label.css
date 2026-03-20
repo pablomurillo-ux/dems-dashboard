@@ -1,0 +1,45 @@
+/* ============================================================
+   Label Component
+   ============================================================ */
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-4);
+  white-space: nowrap;
+}
+
+.label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-fg-base-secondary);
+}
+
+.label-text {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body-medium);
+  color: var(--color-fg-base-secondary);
+  line-height: var(--font-lineheight-body);
+}
+
+/* Sizes */
+
+.label-md .label-icon { width: 16px; height: 16px; }
+.label-md .label-text {
+  font-size: var(--font-size-body-md);
+  letter-spacing: var(--font-letterspacing-body-md);
+}
+
+.label-sm .label-icon { width: 16px; height: 16px; }
+.label-sm .label-text {
+  font-size: var(--font-size-body-sm);
+  letter-spacing: var(--font-letterspacing-body-sm);
+}
+
+.label-xs .label-icon { width: 12px; height: 12px; }
+.label-xs .label-text {
+  font-size: var(--font-size-body-xs);
+  letter-spacing: var(--font-letterspacing-body-xs);
+}

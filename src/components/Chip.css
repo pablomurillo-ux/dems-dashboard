@@ -1,0 +1,125 @@
+/* ============================================================
+   Chip Component
+   ============================================================ */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-4);
+  height: 24px;
+  padding: 0 var(--size-8);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-secondary);
+  background-color: var(--color-bg-base-onprimaryhigh);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  line-height: var(--font-lineheight-body);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  color: var(--color-fg-base-primary);
+  cursor: default;
+  user-select: none;
+  white-space: nowrap;
+  transition: background-color 0.1s, border-color 0.1s, box-shadow 0.1s;
+}
+
+/* Advanced chip is a button */
+button.chip {
+  cursor: pointer;
+  background: none;
+  appearance: none;
+  text-align: left;
+}
+
+.chip-advanced {
+  cursor: pointer;
+}
+
+/* Hover */
+.chip:not(.chip-disabled):hover {
+  background-color: var(--color-bg-base-tertiary);
+}
+
+/* Error */
+.chip-error {
+  border-color: var(--color-border-error);
+}
+
+/* Focus ring */
+.chip-advanced:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 0;
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+}
+
+/* Disabled */
+.chip-disabled {
+  opacity: var(--opacity-half);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Icon */
+.chip-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  color: var(--color-fg-base-secondary);
+}
+
+/* Label */
+.chip-label {
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-base-primary);
+}
+
+/* Category (advanced) */
+.chip-category {
+  font-weight: var(--font-weight-body-semibold);
+  color: var(--color-fg-base-secondary);
+}
+
+.chip-colon {
+  color: var(--color-fg-base-quarternary);
+  margin-right: -2px;
+}
+
+/* Caret (advanced) */
+.chip-caret {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  color: var(--color-fg-base-secondary);
+}
+
+/* Dismiss button (simple) */
+.chip-dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-fg-base-quarternary);
+  border-radius: var(--radius-full);
+  transition: color 0.1s;
+}
+
+.chip-dismiss:hover {
+  color: var(--color-fg-base-primary);
+}
+
+.chip-dismiss:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 1px;
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+}

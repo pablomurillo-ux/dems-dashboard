@@ -1,0 +1,67 @@
+/* ============================================================
+   Tag Component
+   ============================================================ */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-4);
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  padding: 0 var(--size-8);
+  border-radius: var(--radius-4);
+  border: 1px solid transparent;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  line-height: var(--font-lineheight-body);
+  white-space: nowrap;
+}
+
+/* ── Icons ── */
+.tag-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+/* ── Success ── */
+.tag-success.tag-filled  { background-color: var(--color-bg-success-light); }
+.tag-success.tag-outline { border-color: var(--color-border-success); }
+.tag-success { color: var(--color-fg-success-onlow); }
+
+/* ── Info ── */
+.tag-info.tag-filled  { background-color: var(--color-bg-info-light); }
+.tag-info.tag-outline { border-color: var(--color-border-info); }
+.tag-info { color: var(--color-fg-info-onlow); }
+
+/* ── Error ── */
+.tag-error.tag-filled  { background-color: var(--color-bg-error-light); }
+.tag-error.tag-outline { border-color: var(--color-border-error); }
+.tag-error { color: var(--color-fg-error-onlow); }
+
+/* ── Warning ── */
+.tag-warning.tag-filled  { background-color: var(--color-bg-warning-light); }
+.tag-warning.tag-outline { border-color: var(--color-border-warning); }
+.tag-warning { color: var(--color-fg-warning-onlow); }
+
+/* ── Pink ── */
+.tag-pink.tag-filled  { background-color: var(--color-bg-pink-light); }
+.tag-pink.tag-outline { border-color: var(--color-border-pink); }
+.tag-pink { color: var(--color-fg-pink-onlow); }
+
+/* ── Purple ── */
+.tag-purple.tag-filled  { background-color: var(--color-bg-purple-light); }
+.tag-purple.tag-outline { border-color: var(--color-border-purple); }
+.tag-purple { color: var(--color-fg-purple-onlow); }
+
+/* ── Gray ── */
+.tag-gray.tag-filled  { background-color: var(--color-bg-base-tertiary); }
+.tag-gray.tag-outline { border-color: var(--color-border-secondary); }
+.tag-gray { color: var(--color-fg-base-tertiary); }

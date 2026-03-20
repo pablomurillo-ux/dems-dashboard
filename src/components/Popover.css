@@ -1,0 +1,158 @@
+/* ============================================================
+   Popover Component
+   ============================================================ */
+
+.popover {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2));
+}
+
+.popover-top    { flex-direction: column; }
+.popover-bottom { flex-direction: column-reverse; }
+.popover-left   { flex-direction: row; }
+.popover-right  { flex-direction: row-reverse; }
+
+/* ── Card ── */
+
+.popover-card {
+  background-color: var(--color-bg-base-primary);
+  border-radius: var(--radius-12);
+  padding: var(--size-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-8);
+}
+
+.popover-sm { width: 256px; }
+.popover-md { width: 320px; }
+.popover-lg { width: 352px; }
+
+/* ── Header ── */
+
+.popover-header {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+  width: 100%;
+}
+
+.popover-title {
+  flex: 1 0 0;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-body-semibold);
+  letter-spacing: var(--font-letterspacing-body-md);
+  line-height: var(--font-lineheight-body);
+  color: var(--color-fg-base-primary);
+}
+
+.popover-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-fg-base-secondary);
+  opacity: 0.6;
+  transition: opacity 0.1s;
+}
+.popover-close:hover { opacity: 1; }
+
+/* ── Description ── */
+
+.popover-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  line-height: var(--font-lineheight-body);
+  color: var(--color-fg-base-secondary);
+  width: 100%;
+}
+
+/* ── Slot ── */
+
+.popover-slot {
+  width: 100%;
+  border: 1px dashed var(--color-border-purple);
+  border-radius: var(--radius-4);
+  background-color: var(--color-bg-purple-light);
+  padding: var(--size-24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-medium);
+  color: var(--color-fg-purple-onlow);
+}
+
+/* ── Footer ── */
+
+.popover-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popover-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 var(--size-12);
+  border-radius: var(--radius-8);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-medium);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  color: var(--color-fg-brand-onlow);
+  white-space: nowrap;
+}
+
+.popover-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 var(--size-12);
+  border-radius: var(--radius-8);
+  border: none;
+  background-color: var(--color-bg-brand-primary);
+  cursor: pointer;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-medium);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  color: white;
+  white-space: nowrap;
+}
+
+.popover-btn-primary:hover  { background-color: var(--color-bg-brand-primary-hover); }
+.popover-btn-secondary:hover { background-color: var(--color-bg-base-tertiary); }
+
+/* ── Arrow ── */
+
+.popover-arrow {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-bg-base-primary);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.popover-top    .popover-arrow { border-radius: 0 2px 0 0; margin-bottom: -6px; }
+.popover-bottom .popover-arrow { border-radius: 0 0 0 2px; margin-top: -6px; }
+.popover-left   .popover-arrow { border-radius: 2px 0 0 0; margin-right: -6px; }
+.popover-right  .popover-arrow { border-radius: 0 0 2px 0; margin-left: -6px; }

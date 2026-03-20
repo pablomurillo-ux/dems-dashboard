@@ -1,0 +1,140 @@
+/* ============================================================
+   DatePicker Component
+   ============================================================ */
+
+.dp-root {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/* ── Trigger field ── */
+
+.dp-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+}
+
+.dp-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-medium);
+  color: var(--color-fg-base-secondary);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  line-height: var(--font-lineheight-body);
+  white-space: nowrap;
+}
+
+.dp-trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  height: 40px;
+  padding: var(--size-8) var(--size-12);
+  background-color: var(--color-bg-base-onprimarylow);
+  border: 1px solid var(--color-border-base);
+  border-radius: var(--radius-8);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.1s, box-shadow 0.1s;
+  width: 100%;
+  min-width: 200px;
+}
+
+.dp-trigger:hover {
+  border-color: var(--color-border-secondary);
+}
+
+.dp-trigger-open {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 2px rgba(33, 60, 136, 0.15);
+}
+
+.dp-trigger-error {
+  border-color: var(--color-border-error);
+}
+
+.dp-trigger:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 0;
+  box-shadow: 0 0 0 3px var(--color-border-focus);
+}
+
+.dp-trigger-placeholder {
+  flex: 1;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-base-quarternary);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dp-trigger-value {
+  flex: 1;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-base-primary);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dp-trigger-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--color-fg-base-quarternary);
+  pointer-events: none;
+}
+
+/* ── Error ── */
+
+.dp-error {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+  height: 24px;
+  padding: 0 var(--size-4);
+  background-color: var(--color-bg-error-light);
+  border-radius: var(--radius-4);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-error-onlow);
+  letter-spacing: var(--font-letterspacing-body-sm);
+}
+
+/* ── Popover ── */
+
+.dp-popover {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 100;
+  animation: dp-fade-in 0.1s ease;
+}
+
+@keyframes dp-fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Range triggers (side by side) ── */
+
+.dp-range-triggers {
+  display: flex;
+  gap: var(--size-12);
+}
+
+.dp-range-triggers .dp-field {
+  flex: 1;
+}

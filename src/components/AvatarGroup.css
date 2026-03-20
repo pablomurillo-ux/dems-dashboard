@@ -1,0 +1,45 @@
+/* ============================================================
+   AvatarGroup Component
+   ============================================================ */
+
+.avatar-group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.avatar-group-stack {
+  display: inline-flex;
+  align-items: center;
+}
+
+.avatar-group-item {
+  position: relative;
+  border-radius: var(--radius-full);
+  border: 1px solid white;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: -8px;
+}
+
+.avatar-group-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-full);
+}
+
+.avatar-group-xs .avatar-group-item { width: var(--size-24); height: var(--size-24); }
+.avatar-group-sm .avatar-group-item { width: var(--size-32); height: var(--size-32); }
+.avatar-group-md .avatar-group-item { width: var(--size-40); height: var(--size-40); }
+
+.avatar-group-count {
+  margin-left: 12px;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-body-regular);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--font-lineheight-body);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  color: var(--color-fg-base-secondary);
+  white-space: nowrap;
+}
