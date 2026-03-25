@@ -1,0 +1,97 @@
+/* ── Drawer ────────────────────────────────────────────────────────────────── */
+
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  width: var(--size-520);
+  max-width: 640px;
+  background-color: var(--color-bg-base-primary);
+  border-left: var(--border-width-1) solid var(--color-border-base);
+  border-radius: var(--radius-16) 0 0 var(--radius-16);
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+  height: 72px;
+  flex-shrink: 0;
+  padding: var(--size-16);
+  border-bottom: var(--border-width-1) solid var(--color-border-base);
+}
+
+.drawer-title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-heading-xs);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--font-lineheight-heading);
+  letter-spacing: var(--font-letterspacing-heading-xs);
+  color: var(--color-fg-base-primary);
+  margin: 0;
+}
+
+.drawer-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: var(--radius-8);
+  color: var(--color-fg-base-secondary);
+  cursor: pointer;
+}
+
+.drawer-icon-btn:hover {
+  background-color: var(--color-bg-base-onprimaryhigh);
+}
+
+.drawer-close-btn {
+  margin-left: auto;
+}
+
+/* ── Body ────────────────────────────────────────────────────────────────── */
+
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--size-16);
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+
+.drawer-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--size-12);
+  flex-shrink: 0;
+  padding: var(--size-16);
+  border-top: var(--border-width-1) solid var(--color-border-base);
+}
+
+.drawer-footer-btn {
+  flex: 1;
+  height: 48px;
+  justify-content: center;
+}
