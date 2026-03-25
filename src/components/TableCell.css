@@ -1,0 +1,100 @@
+/* ── TableCell ─────────────────────────────────────────────────────────────── */
+
+.table-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  min-height: 56px;
+  max-height: 56px;
+  padding: var(--size-12) var(--size-16);
+  border: 0.5px solid var(--color-border-base);
+  overflow: hidden;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-sm);
+  font-weight: var(--font-weight-body-regular);
+  line-height: var(--font-lineheight-body);
+  letter-spacing: var(--font-letterspacing-body-sm);
+  color: var(--color-fg-base-secondary);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Zebra striping */
+.table-cell-zebra {
+  background-color: var(--color-bg-base-onprimaryhigh);
+}
+
+/* Compact (md/sm) size */
+.table-cell-compact {
+  min-height: 40px;
+  max-height: 40px;
+  padding: var(--size-8) var(--size-16);
+}
+
+/* ── Type variants ─────────────────────────────────────────────────────────── */
+
+.table-cell-title {
+  font-weight: var(--font-weight-body-semibold);
+  color: var(--color-fg-base-primary);
+}
+
+.table-cell-text {
+  color: var(--color-fg-base-secondary);
+}
+
+.table-cell-action {
+  color: var(--color-fg-brand-onlow);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.table-cell-price {
+  justify-content: flex-end;
+  font-weight: var(--font-weight-body-medium);
+  text-align: right;
+}
+
+.table-cell-currency {
+  margin-right: 1px;
+}
+
+.table-cell-user {
+  gap: var(--size-8);
+}
+
+.table-cell-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-base-tertiary);
+  border: var(--border-width-1) solid var(--color-border-base);
+  flex-shrink: 0;
+}
+
+.table-cell-username {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-cell-icon {
+  display: flex;
+  align-items: center;
+  color: var(--color-fg-base-tertiary);
+  flex-shrink: 0;
+}
+
+.table-cell-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.table-cell-empty {
+  background-color: transparent;
+}
+
+.table-cell-select,
+.table-cell-checkbox {
+  justify-content: center;
+  padding: var(--size-12) var(--size-8);
+}
