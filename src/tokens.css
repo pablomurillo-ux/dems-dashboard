@@ -474,6 +474,17 @@
   --opacity-half:            0.5;
   --opacity-visible:         1;
 
+
+  /* ============================================================
+     ELEVATION TOKENS
+     Sourced from Figma — $vds.drop.shadow.*
+     ============================================================ */
+
+  --shadow-xs:  0px 1px 2px 0px var(--primitive-color-shadow-50);   /* rgba(0,0,0,0.05) */
+  --shadow-sm:  0px 1px 4px 0px var(--primitive-color-shadow-100);  /* rgba(0,0,0,0.10) */
+  --shadow-md:  0px 1px 4px 0px var(--primitive-color-shadow-150);  /* rgba(0,0,0,0.15) */
+  --shadow-lg:  0px 1px 4px 0px var(--primitive-color-shadow-200);  /* rgba(0,0,0,0.20) */
+
 }
 
 
@@ -530,6 +541,12 @@
     --color-border-pink:              #f472b6;
     --color-border-purple:            #a284fb;
 
+    /* -- Elevation ------------------------------------------- */
+    --shadow-xs:  none;
+    --shadow-sm:  none;
+    --shadow-md:  none;
+    --shadow-lg:  none;
+
   }
 }
 
@@ -578,5 +595,11 @@
   --color-border-success:           #4ade80;
   --color-border-pink:              #f472b6;
   --color-border-purple:            #a284fb;
+
+  /* -- Elevation ------------------------------------------- */
+  --shadow-xs:  none;
+  --shadow-sm:  none;
+  --shadow-md:  none;
+  --shadow-lg:  none;
 
 }
