@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/dems-dashboard/',
   plugins: [react()],
   build: {
     // LightningCSS (vite default) rejects slash-separated CSS custom property
