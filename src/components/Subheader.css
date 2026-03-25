@@ -1,0 +1,67 @@
+/* ── Subheader ─────────────────────────────────────────────────────────────── */
+
+.subheader {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  max-height: 56px;
+  padding: var(--size-4) var(--size-24);
+  background-color: var(--color-bg-base-primary);
+  border-bottom: var(--border-width-1) solid var(--color-border-base);
+  width: 100%;
+  gap: var(--size-0);
+}
+
+.subheader-subheader {
+  justify-content: space-between;
+}
+
+.subheader-breadcrumbs {
+  justify-content: flex-start;
+}
+
+/* ── Info (left) ─────────────────────────────────────────────────────────── */
+
+.subheader-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.subheader-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  flex-shrink: 0;
+}
+
+.subheader-title {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-lg);
+  font-weight: var(--font-weight-body-semibold);
+  line-height: var(--font-lineheight-body);
+  letter-spacing: var(--font-letterspacing-body-lg);
+  color: var(--color-fg-base-primary);
+  white-space: nowrap;
+}
+
+.subheader-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-medium);
+  line-height: var(--font-lineheight-body);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  color: var(--color-fg-base-tertiary);
+  margin: 0;
+}
+
+/* ── Right section ───────────────────────────────────────────────────────── */
+
+.subheader-right {
+  display: flex;
+  align-items: center;
+  gap: var(--size-12);
+  flex-shrink: 0;
+}
