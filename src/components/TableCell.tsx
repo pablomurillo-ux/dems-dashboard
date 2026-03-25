@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import { type ReactNode, type CSSProperties } from 'react';
 import './TableCell.css';
 
 export type TableCellType =
@@ -27,6 +27,7 @@ interface TableCellProps {
   rightIcon?: ReactNode;
   children?: ReactNode;
   className?: string;
+  style?: CSSProperties;
 }
 
 export function TableCell({
@@ -42,6 +43,7 @@ export function TableCell({
   rightIcon,
   children,
   className,
+  style,
 }: TableCellProps) {
   const classes = [
     'table-cell',
@@ -53,7 +55,7 @@ export function TableCell({
 
   if (type === 'price') {
     return (
-      <div className={classes}>
+      <div className={classes} style={style}>
         <span className="table-cell-currency">$</span>
         <span>{price}</span>
       </div>
@@ -62,7 +64,7 @@ export function TableCell({
 
   if (type === 'user') {
     return (
-      <div className={classes}>
+      <div className={classes} style={style}>
         <div className="table-cell-avatar" aria-hidden="true" />
         <span className="table-cell-username">{userName}</span>
       </div>
@@ -71,18 +73,18 @@ export function TableCell({
 
   if (type === 'icon') {
     return (
-      <div className={classes}>
+      <div className={classes} style={style}>
         {children ?? leftIcon}
       </div>
     );
   }
 
   if (type === 'empty') {
-    return <div className={classes} aria-hidden="true" />;
+    return <div className={classes} style={style} aria-hidden="true" />;
   }
 
   return (
-    <div className={classes}>
+    <div className={classes} style={style}>
       {hasLeftIcon && leftIcon && (
         <span className="table-cell-icon table-cell-icon-left">{leftIcon}</span>
       )}
