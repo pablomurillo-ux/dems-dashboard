@@ -1,7 +1,7 @@
-import Gallery from './Gallery'
+import { DashboardPage } from './pages/DashboardPage';
 
 function App() {
-  return <Gallery />
+  return <DashboardPage />;
 }
 
-export default App
+export default App;

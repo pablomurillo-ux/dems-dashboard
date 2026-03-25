@@ -1,11 +1,20 @@
 @import "tailwindcss";
 @import "./tokens.css";
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  background-color: var(--color-bg-base-secondary);
+  color: var(--color-fg-base-primary);
+  font-family: var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
 }
 
 #root {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
