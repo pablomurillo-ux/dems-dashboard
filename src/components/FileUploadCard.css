@@ -1,0 +1,170 @@
+/* ── FileUploadCard ────────────────────────────────────────────────────────── */
+
+.file-upload-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 352px;
+  min-width: 352px;
+  border: var(--border-width-1) solid var(--color-border-base);
+  border-radius: var(--radius-8);
+  padding: 0 var(--size-8);
+  background-color: var(--color-bg-base-onprimarylow);
+  overflow: hidden;
+}
+
+/* ── State variants ──────────────────────────────────────────────────────── */
+
+.file-upload-card-in-progress {
+  min-height: 72px;
+  max-height: 72px;
+}
+
+.file-upload-card-success {
+  min-height: 56px;
+  max-height: 56px;
+}
+
+.file-upload-card-error {
+  min-height: 72px;
+  max-height: 72px;
+  background-color: var(--color-bg-error-light);
+  border-color: var(--color-border-error);
+}
+
+/* ── Row ─────────────────────────────────────────────────────────────────── */
+
+.file-upload-card-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--size-4);
+  width: 100%;
+  padding: var(--size-8) 0;
+}
+
+.file-upload-card-success .file-upload-card-row {
+  align-items: center;
+}
+
+.file-upload-card-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.file-upload-card-in-progress .file-upload-card-icon {
+  color: var(--color-fg-base-secondary);
+}
+
+.file-upload-card-success .file-upload-card-icon {
+  color: var(--color-fg-success-onlow);
+}
+
+.file-upload-card-error .file-upload-card-icon {
+  color: var(--color-fg-error-onlow);
+}
+
+/* ── File info ───────────────────────────────────────────────────────────── */
+
+.file-upload-card-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  gap: 0;
+  line-height: var(--font-lineheight-body);
+  letter-spacing: var(--font-letterspacing-body-xs);
+  white-space: nowrap;
+}
+
+.file-upload-card-filename {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-medium);
+  color: var(--color-fg-base-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-upload-card-filesize {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-base-quarternary);
+}
+
+/* ── Remove button ───────────────────────────────────────────────────────── */
+
+.file-upload-card-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--color-fg-base-tertiary);
+  cursor: pointer;
+}
+
+.file-upload-card-remove:hover {
+  color: var(--color-fg-error-onlow);
+}
+
+/* ── Progress row ────────────────────────────────────────────────────────── */
+
+.file-upload-card-progress-row {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4);
+  padding-left: var(--size-24);
+  padding-bottom: var(--size-8);
+  width: 100%;
+}
+
+.file-upload-card-progress-track {
+  flex: 1;
+  height: 8px;
+  max-height: 8px;
+  min-height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-base-onprimaryhigh);
+  overflow: hidden;
+}
+
+.file-upload-card-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-brand-primary);
+  transition: width 0.2s ease;
+}
+
+.file-upload-card-progress-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-base-quarternary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Support message (error) ─────────────────────────────────────────────── */
+
+.file-upload-card-support {
+  padding-left: var(--size-24);
+  padding-bottom: var(--size-8);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-body-regular);
+  color: var(--color-fg-error-onlow);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}
